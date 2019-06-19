@@ -20,12 +20,16 @@
       color: $min-color !important;
       font-size: 15px;
       text-transform: uppercase;
-      padding-left: 30px !important;
-      padding-right: 30px !important;
+      @media (min-width: 1281px) {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+}
+
       margin-right: 19px;
       &:hover {
         color: $color1 !important;
       }
+
     }
   }
 

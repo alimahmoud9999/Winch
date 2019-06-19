@@ -58,5 +58,14 @@ $('.my-content').hide();
 $('#'+myid+"-contetnt").fadeIn();
 console.log(myid);
 });
+///Tabs Sec4
+
+$('.my-contente:not(:first)').hide();
+$('.list-sec4 li').on('click',function(){
+var myid = $(this).attr("id");
+$('.my-contente').hide();
+$('#'+myid+"-contetnte").fadeIn();
+console.log(myid);
+});
 
 });

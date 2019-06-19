@@ -121,13 +121,13 @@
     text-transform: uppercase;
     font-family: $f-bold;
   }
+  .list-sec5,
   .list-sec4{
     li{
       margin-bottom: 35px;
       cursor: pointer;
       span{
         display: block;
-
         width:65px;
         height: 65px;
         line-height: 65px;
@@ -137,6 +137,9 @@
         font-size: 30px;
         border: 2px solid $color-background;
         transition: all ease-in-out .3s;
+      }
+      .sm-screen{
+        width: 100%;
       }
       h2{
         display: inline-block;
@@ -157,14 +160,27 @@
       }
     }
   }
+  .my-contente,
   .my-content{
     transition: all ease-in-out .3s;
     .img{
-      width: 414px;
-      height: 664px;
+      // width: 414px;
+      // height: 664px;
       display: block;
       margin-left: auto;
+        margin-right: auto;
     }
+    .h2-content{
+      display: inline-block;
+      color: $color-background;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+      .p-content{
+        color: $color-background;
+        font-size: 18px;
+        text-transform: capitalize;
+      }
   }
 
 }
