@@ -1,0 +1,53 @@
+/*
+Tamplet name : WINCH
+coder name Ali mahmoud
+start Date 12/6/2019
+*/
+//import files scss
+@import 'sass/var';
+@import 'sass/component';
+/*iMPORT FONT*/
+@font-face {
+  font-family: 'Sarabun-Regular';
+  src: url("../fonts/winch_regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Sarabun-bold';
+  src: url("../fonts/winch_bold.ttf") format('truetype');
+}
+
+a {
+  outline: none;
+
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: $f-normal !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: $color-background;
+}
+.page{
+  background-color: rgba(255, 255, 255, 1);
+}
+/*Start Loder*/
+@import 'sass/loder';
+/*Start Navbar*/
+@import "sass/navbar";
+/*Start Header*/
+@import 'sass/header';
+/*Start Home*/
+@import 'sass/home';
+/*Start Page Towing && Furniture page*/
+@import 'sass/towningservice';
+/*start footer*/
+@import 'sass/footer';

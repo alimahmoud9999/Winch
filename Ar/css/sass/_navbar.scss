@@ -1,0 +1,111 @@
+
+  .navbar-light {
+    background-color: rgba(57, 67, 124, 0.30) !important;
+  }
+  .navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .navbar-nav {
+    .nav-item {
+      margin-left: 5px !important;
+      margin-right: 5px !important;
+    }
+
+    .nav-link {
+      color: $min-color !important;
+      font-size: 15px;
+      text-transform: uppercase;
+      @media (min-width: 1281px) {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+}
+
+      margin-right: 0px;
+      &:hover {
+        color: $color1 !important;
+      }
+
+    }
+  }
+
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: $color1;
+}
+
+.navbar-light .navbar-nav .show > .nav-link2 {
+  background-color: $color-background;
+  border-radius: 15px 15px 0 0;
+}
+
+nav {
+  .navbar-brand {
+    margin-left: 1rem;
+  }
+
+  .dropdown-lang {
+    border: 1px solid #fff;
+    border-radius: 15px 15px 0 0;
+
+    .dropdown-menu {
+      left: -4px;
+
+      .dropdown-item {
+        background-color: rgba(57, 67, 124, 0.25) !important;
+        border-top: 2px solid $color-background;
+        border-bottom: 2px solid $color-background;
+      }
+    }
+  }
+
+  .dropdown-select {
+    .dropdown-menu {
+      left: -40px;
+      top: 89%;
+      border-radius: 15px 15px 0 0;
+      background-color: $color-background;
+      border: none;
+      padding: 20px 35px;
+
+      hr {
+        background-color: #5A649D;
+        width: 60%;
+      }
+
+      .dropdown-item {
+        color: #fff;
+        font-size: 15px;
+
+        img {
+          margin-bottom: 15px;
+        }
+
+        &:hover {
+          background-color: $color-background;
+        }
+      }
+    }
+  }
+
+  .book-item {
+    background-color: $color1;
+    border-radius: 15px 15px 0 0;
+
+    .nav-link {
+      color: #39437C !important;
+      font-family: $f-bold;
+
+      &:hover {
+        color: #39437C !important;
+      }
+    }
+  }
+}

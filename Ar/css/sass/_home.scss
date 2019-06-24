@@ -1,0 +1,248 @@
+.sec1{
+  background-color: $color-background;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  .head-text{
+    @extend %head-text;
+      margin-bottom: 30px;
+  }
+  .head-p{
+    @extend %head-p;
+    margin-bottom: 30px;
+  }
+  .box-sec1{
+    img{
+      width: 255px;
+      height: 255px;
+      margin-bottom: 15px;
+    }
+    h2{
+      color: $color1;
+      font-family: $f-bold;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+    p{
+      color: $min-color;
+      font-size: 18px;
+    }
+  }
+}
+.sec2{
+  background: url(../img/reviews_full_bg.png)bottom center fixed;
+  min-height: 554px;
+  padding-top: 60px;
+  .lSSlideOuter {
+    direction: ltr;
+  }
+  .head-text{
+    @extend %head-text;
+    margin-bottom: 60px;
+  }
+  .myslider{
+
+    img{
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      margin-bottom: 20px;
+    }
+    ul{
+      li{
+        display: inline-block;
+      }
+    }
+    h3{
+      font-family: $f-bold;
+      font-size: 20px;
+      color: $min-color;
+      text-transform: uppercase;
+    }
+    .fa-star{
+      color: $color1;
+      margin-bottom: 15px;
+    }
+    .fa-star-o{
+      color: $min-color;
+    }
+    p{
+      width:59%;
+      margin: auto;
+      color: $min-color;
+      font-size: 20px;
+    }
+
+  }
+  .lSPager{
+    display: none !important;
+  }
+}
+.sec3{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url(../img/map_dark_bg.jpg)center center;
+  background-size: cover;
+  .head-text{
+    @extend %head-text;
+    margin-bottom: 90px;
+  }
+  .box{
+    margin-bottom: 90px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    .info{
+      padding-top: 90px;
+    }
+    h2{
+        color: $color1;
+        font-family: $f-bold;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    p{
+      span{
+        color: $color1;
+        text-transform: uppercase;
+      }
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+}
+.sec4{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url(../img/map_light_bg.jpg)center center;
+  .head-text{
+    text-align: center;
+    margin-bottom: 90px;
+    color: $color-background;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: $f-bold;
+  }
+  .list-sec5,
+  .list-sec4{
+    li{
+      margin-bottom: 35px;
+      cursor: pointer;
+      span{
+        display: block;
+        width:65px;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        border-radius: 15px 15px 0 0 ;
+        color: $color-background;
+        font-size: 30px;
+        border: 2px solid $color-background;
+        transition: all ease-in-out .3s;
+      }
+      .sm-screen{
+        width: 100%;
+      }
+      h2{
+        display: inline-block;
+        color: $color-background;
+        font-size: 25px;
+        text-transform: uppercase;
+      }
+      p{
+        color: $color-background;
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+    }
+    .active{
+      span{
+          color: $color1;
+          background-color: #39437C;
+      }
+    }
+  }
+  .my-contente,
+  .my-content{
+    transition: all ease-in-out .3s;
+    .img{
+      // width: 414px;
+      // height: 664px;
+      display: block;
+      margin-left: auto;
+        margin-right: auto;
+    }
+    .h2-content{
+      display: inline-block;
+      color: $color-background;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+      .p-content{
+        color: $color-background;
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+  }
+
+}
+.sec5{
+  padding-top: 90px;
+  padding-bottom: 30px;
+  .big-img{
+    margin-bottom: 30px;
+  }
+  .head-text{
+    @extend %head-text;
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: 25px;
+    color: $min-color;
+    span{
+      color: $color1;
+      text-transform: uppercase;
+    }
+  }
+  a{
+    margin-left: 15px;
+  }
+}
+.sec6{
+    margin-top: 90px;
+  .container-fluid{
+    overflow: hidden;
+  }
+  .background{
+        background: url(../img/become_a_captain.jpg) center center no-repeat;
+        min-height: 400px;
+  }
+  .content{
+    background-color: #333D6F;
+    min-height: 400px;
+    padding-right: 33%;
+padding-top: 83px;
+@media(max-width: 767px){
+      padding-left: 8%;
+}
+h2{
+  margin-bottom: 30px;
+  font-size: 40px;
+  color:#FFF488;
+  text-transform: uppercase;
+  font-family: $f-bold;
+}
+p{
+  margin-bottom: 60px;
+  color: $min-color;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+a{
+@extend %btn-style;
+}
+  }
+
+
+}

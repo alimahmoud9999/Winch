@@ -1,6 +1,7 @@
-.BecomeCaptain{
-  margin-bottom: 120px ;
+.BecomeCaptain {
+  margin-bottom: 120px;
 }
+
 .sec1-twingservice {
   background: url("../img/map_dark_bg.jpg");
   min-height: 800px;
@@ -9,7 +10,7 @@
   padding-bottom: 40px;
   @media (min-width: 481px) and (max-width: 767px) {
     padding-top: 0;
-}
+  }
 
   .content {
     padding-top: 90px;
@@ -21,9 +22,8 @@
       margin-bottom: 30px;
       text-transform: uppercase;
       @media (min-width: 481px) and (max-width: 767px) {
-          font-size: 35px;
-    }
-
+        font-size: 35px;
+      }
     }
 
     p {
@@ -31,8 +31,8 @@
       color: $min-color;
       margin-bottom: 30px;
       @media (min-width: 481px) and (max-width: 767px) {
-          font-size: 25px;
-    }
+        font-size: 25px;
+      }
     }
 
     a {
@@ -42,7 +42,7 @@
 
   .img-l {
     margin-top: 130px;
-    @media(max-width: 70px) {
+    @media(max-width: 767px) {
       margin-top: 30px;
       margin-bottom: 60px;
     }
@@ -83,7 +83,8 @@
       margin-bottom: 60px;
     }
 
-    input {
+    input,
+    textarea {
       border: none;
       border-radius: 15px 15px 0 0;
       background-color: #FAFAFA;
@@ -91,6 +92,12 @@
       margin-bottom: 40px;
       height: 60px;
       text-indent: 15px;
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+      padding-top: 15px;
     }
 
     .btn {
@@ -178,21 +185,60 @@
     }
   }
 }
-.sec1-partners{
+
+.sec1-partners {
   padding-top: 90px;
   padding-bottom: 60px;
-  h2{
-      font-size: 30px;
-      color: $color-background;
-      margin-bottom: 60px;
-      text-transform: uppercase;
-      font-family: $f-bold;
-      letter-spacing: 2px;
+
+  h2 {
+    font-size: 30px;
+    color: $color-background;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-family: $f-bold;
+    letter-spacing: 2px;
   }
-  .box-img{
+
+  .box-img {
     margin-bottom: 30px;
     width: 100%;
     height: 155px;
     box-shadow: 0 40px 99px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.sec1-about {
+  padding-top: 90px;
+  padding-bottom: 60px;
+
+  .box {
+    h1 {
+      font-size: 30px;
+      color: $color-background;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      font-family: $f-bold;
+      letter-spacing: 2px;
+    }
+    p {
+      color: $color-background;
+      font-size: 20px;
+    }
+  }
+  .sec1{
+    background-color: transparent;
+    .head-text{
+      color: $color-background;
+    }
+    .box-sec1 {
+      h2,p{
+          color: $color-background;
+      }
+      img{
+        width: 160px;
+        height: 100px;
+      }
+    }
+
   }
 }
