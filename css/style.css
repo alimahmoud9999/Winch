@@ -58,6 +58,7 @@ start Date 17/6/2019
   font-size: 20px;
   text-transform: uppercase;
   font-family: "Sarabun-bold";
+  letter-spacing: 1px;
 }
 .sec2-towing .box p {
   color: rgba(90, 100, 157, 0.8);
@@ -626,6 +627,7 @@ header .carousel-caption p span {
   font-size: 25px;
   text-transform: uppercase;
   font-family: "Sarabun-bold";
+  letter-spacing: 1px;
 }
 .sec1-twingservice .box-3 .p-content {
   font-size: 18px;
@@ -845,6 +847,10 @@ header .carousel-caption p span {
 .sec1-about .sec1 .head-text {
   color: #39437C;
 }
+.sec1-about .sec1 .box-sec1 h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
 .sec1-about .sec1 .box-sec1 h2,
 .sec1-about .sec1 .box-sec1 p {
   color: #39437C;
@@ -960,6 +966,32 @@ header .carousel-caption p span {
     margin-right: auto;
     display: block;
   }
+}
+
+.sec1-help .box {
+  margin-bottom: 60px;
+}
+.sec1-help .box h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Sarabun-bold";
+  color: #39437C;
+  margin-bottom: 15px;
+}
+.sec1-help .box ul li {
+  padding-left: 15px;
+}
+.sec1-help .box ul li:before {
+  content: "•";
+  color: #39437C;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.sec1-help .box ul li a {
+  color: #39437C;
+  font-size: 18px;
 }
 
 /*start footer*/

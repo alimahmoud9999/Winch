@@ -64,6 +64,7 @@
       font-size: 25px;
       text-transform: uppercase;
       font-family: $f-bold;
+      letter-spacing: 1px;
     }
 
     .p-content {
@@ -315,6 +316,10 @@
     }
 
     .box-sec1 {
+      h2{
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
       h2,
       p {
         color: $color-background;
@@ -416,6 +421,36 @@
       margin-left: auto;
       margin-right: auto;
       display: block;
+    }
+  }
+}
+.sec1-help{
+  .box{
+    margin-bottom: 60px;
+    h2{
+      font-size: 25px;
+      text-transform: uppercase;
+      font-family: $f-bold;
+      color: $color-background;
+      margin-bottom: 15px;
+    }
+    ul {
+      li{
+        padding-left: 15px;
+
+        &:before {
+          content: "\2022";
+          color: #39437C;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+        a{
+          color: #39437C;
+          font-size: 18px;
+        }
+      }
     }
   }
 }
