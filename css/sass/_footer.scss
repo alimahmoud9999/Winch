@@ -1,5 +1,6 @@
 footer {
   padding-top: 60px;
+    // padding-bottom: 60px;
   background-color: $color-background;
   .first {
     .logo-footer {
@@ -63,6 +64,15 @@ footer {
       }
     }
   }
+  .end-footer{
+    background-color: #202646;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 15px;
+  }
 }
 .footer-pages{
   background-color: rgba(250, 250, 250, 1);
@@ -94,5 +104,9 @@ footer {
     h3{
       color:  $color-background;
     }
+  }
+  .end-footer{
+    background: #F0F0F0;
+    color: #39437C;
   }
 }

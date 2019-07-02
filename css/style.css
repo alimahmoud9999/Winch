@@ -2,7 +2,7 @@
 /*
 Tamplet name : WINCH
 coder name Ali mahmoud
-start Date 12/6/2019
+start Date 17/6/2019
 */
 .sec5 .head-text, .sec3 .head-text, .sec2 .head-text, .sec1 .head-text {
   color: #FFF488;
@@ -21,7 +21,7 @@ start Date 12/6/2019
   font-family: "Sarabun-bold";
 }
 
-.sec1-twingservice form .btn, .sec1-twingservice .content a, .sec6 .content a {
+.help .btn, .sec1-twingservice form .btn, .sec1-twingservice .content a, .sec6 .content a {
   width: 255px;
   height: 60px;
   border-radius: 15px 15px 0 0;
@@ -32,7 +32,7 @@ start Date 12/6/2019
   background-color: #FFF488;
   font-family: "Sarabun-bold";
 }
-.sec1-twingservice form .btn:focus, .sec1-twingservice .content a:focus, .sec6 .content a:focus {
+.help .btn:focus, .sec1-twingservice form .btn:focus, .sec1-twingservice .content a:focus, .sec6 .content a:focus {
   outline: none;
   box-shadow: none;
 }
@@ -41,7 +41,7 @@ start Date 12/6/2019
 .sec2-towing .box {
   background-color: #fff;
   border-radius: 25px 25px 0 0;
-  box-shadow: 0px 40px 99px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 99px rgba(57, 67, 124, 0.1);
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 15px;
@@ -50,6 +50,8 @@ start Date 12/6/2019
 }
 .sec2-towing .box img {
   margin-bottom: 30px;
+  width: 230px;
+  height: 120px;
 }
 .sec2-towing .box h3 {
   color: #39437C;
@@ -63,6 +65,7 @@ start Date 12/6/2019
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 /*iMPORT FONT*/
@@ -98,7 +101,7 @@ body {
 
 /*Start Loder*/
 .loder {
-  background-color: #000;
+  background-color: #3b437b;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -157,7 +160,6 @@ body {
   color: #fff !important;
   font-size: 15px;
   text-transform: uppercase;
-  margin-right: 19px;
 }
 @media (min-width: 1281px) {
   .navbar-nav .nav-link {
@@ -189,12 +191,9 @@ nav .dropdown-lang {
   border-radius: 15px 15px 0 0;
 }
 nav .dropdown-lang .dropdown-menu {
-  left: -4px;
-}
-nav .dropdown-lang .dropdown-menu .dropdown-item {
-  background-color: rgba(57, 67, 124, 0.25) !important;
-  border-top: 2px solid #39437C;
-  border-bottom: 2px solid #39437C;
+  left: -3px;
+  min-width: 8.8rem;
+  padding: 2px 0 2px 10px;
 }
 nav .dropdown-select .dropdown-menu {
   left: -40px;
@@ -203,6 +202,10 @@ nav .dropdown-select .dropdown-menu {
   background-color: #39437C;
   border: none;
   padding: 20px 15px;
+}
+nav .dropdown-select .dropdown-menu img {
+  width: 90px;
+  height: 30px;
 }
 nav .dropdown-select .dropdown-menu hr {
   background-color: #5A649D;
@@ -424,6 +427,12 @@ header .carousel-caption p span {
   text-transform: uppercase;
   font-family: "Sarabun-bold";
 }
+.sec4 .list-sec5,
+.sec4 .list-sec4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .sec4 .list-sec5 li,
 .sec4 .list-sec4 li {
   margin-bottom: 35px;
@@ -432,9 +441,8 @@ header .carousel-caption p span {
 .sec4 .list-sec5 li span,
 .sec4 .list-sec4 li span {
   display: block;
-  width: 65px;
-  height: 65px;
-  line-height: 65px;
+  height: 61px;
+  line-height: 59px;
   text-align: center;
   border-radius: 15px 15px 0 0;
   color: #39437C;
@@ -452,12 +460,14 @@ header .carousel-caption p span {
   color: #39437C;
   font-size: 25px;
   text-transform: uppercase;
+  font-family: "Sarabun-bold";
 }
 .sec4 .list-sec5 li p,
 .sec4 .list-sec4 li p {
   color: #39437C;
   font-size: 18px;
   text-transform: capitalize;
+  width: 90%;
 }
 .sec4 .list-sec5 .active span,
 .sec4 .list-sec4 .active span {
@@ -473,6 +483,7 @@ header .carousel-caption p span {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: transpernt;
 }
 .sec4 .my-contente .h2-content,
 .sec4 .my-content .h2-content {
@@ -490,7 +501,7 @@ header .carousel-caption p span {
 
 .sec5 {
   padding-top: 90px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
 .sec5 .big-img {
   margin-bottom: 30px;
@@ -501,6 +512,7 @@ header .carousel-caption p span {
 .sec5 p {
   font-size: 25px;
   color: #fff;
+  margin-bottom: 30px;
 }
 .sec5 p span {
   color: #FFF488;
@@ -510,9 +522,6 @@ header .carousel-caption p span {
   margin-left: 15px;
 }
 
-.sec6 {
-  margin-top: 90px;
-}
 .sec6 .container-fluid {
   overflow: hidden;
 }
@@ -525,6 +534,12 @@ header .carousel-caption p span {
   min-height: 400px;
   padding-left: 33%;
   padding-top: 83px;
+}
+@media (max-width: 767px) {
+  .sec6 .content {
+    background: url(../img/become_a_captain.jpg) left center no-repeat;
+    padding-bottom: 70px;
+  }
 }
 @media (max-width: 767px) {
   .sec6 .content {
@@ -556,7 +571,7 @@ header .carousel-caption p span {
   padding-top: 130px;
   padding-bottom: 40px;
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .sec1-twingservice {
     padding-top: 0;
   }
@@ -570,6 +585,7 @@ header .carousel-caption p span {
   color: #FFF488;
   margin-bottom: 30px;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .sec1-twingservice .content h1 {
@@ -601,9 +617,15 @@ header .carousel-caption p span {
 .sec1-twingservice .box-3 {
   margin-bottom: 30px;
 }
+.sec1-twingservice .box-3 img {
+  width: 65px;
+  height: 64px;
+}
 .sec1-twingservice .box-3 h3 {
   color: #FFF488;
   font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Sarabun-bold";
 }
 .sec1-twingservice .box-3 .p-content {
   font-size: 18px;
@@ -615,7 +637,7 @@ header .carousel-caption p span {
   box-shadow: 0 0 99px rgba(57, 67, 124, 0.1);
   position: relative;
   top: 75px;
-  z-index: 9999;
+  z-index: 1;
 }
 .sec1-twingservice form h1 {
   color: #39437C;
@@ -625,15 +647,26 @@ header .carousel-caption p span {
   text-transform: uppercase;
   margin-bottom: 60px;
 }
+@media (min-width: 0px) and (max-width: 474px) {
+  .sec1-twingservice form h1 {
+    font-size: 25px;
+  }
+}
 .sec1-twingservice form input,
 .sec1-twingservice form textarea {
   border: none;
   border-radius: 15px 15px 0 0;
   background-color: #FAFAFA;
   color: #39437C;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   height: 60px;
   text-indent: 15px;
+}
+.sec1-twingservice form input:focus,
+.sec1-twingservice form textarea:focus {
+  color: #39437C;
+  border: none;
+  outline: none;
 }
 .sec1-twingservice form textarea {
   resize: none;
@@ -644,12 +677,54 @@ header .carousel-caption p span {
   margin-right: auto;
   margin-left: auto;
   display: block;
+  margin-top: 30px;
+}
+
+.partners2 .content {
+  padding-top: 205px;
+}
+@media (min-width: 396px) and (max-width: 474px) {
+  .partners2 .content {
+    padding-top: 300px;
+  }
+}
+@media (min-width: 0px) and (max-width: 396px) {
+  .partners2 .content {
+    padding-top: 300px;
+  }
+}
+.partners2 .content .box-3 {
+  margin-bottom: 30px;
+}
+.partners2 .content .box-3 h3 {
+  color: #39437C;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Sarabun-bold";
+}
+@media (min-width: 0px) and (max-width: 474px) {
+  .partners2 .content .box-3 h3 {
+    font-size: 20px;
+  }
+}
+.partners2 .content .box-3 .p-content {
+  font-size: 18px;
+  color: #5A649D;
+}
+@media (min-width: 0px) and (max-width: 474px) {
+  .partners2 .content .box-3 .p-content {
+    font-size: 16px;
+  }
 }
 
 .sec2-towing {
   position: relative;
   top: -60px;
 }
+.sec1-goods .box p {
+  width: 80%;
+}
+
 .sec3-towing {
   padding-bottom: 90px;
 }
@@ -676,7 +751,7 @@ header .carousel-caption p span {
 .sec4-towing .content {
   background-color: #FFF2EF;
   border-radius: 25px 25px 0 0;
-  padding: 30px 0 30px 30px;
+  padding: 30px 0 30px 45px;
   position: relative;
 }
 .sec4-towing .content:after {
@@ -710,6 +785,22 @@ header .carousel-caption p span {
   margin-bottom: 15px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .partners {
+    height: 800px;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .partners .content {
+    padding-top: 70px !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .partners .content h1 {
+    letter-spacing: 0;
+  }
+}
+
 .sec1-partners {
   padding-top: 90px;
   padding-bottom: 60px;
@@ -733,6 +824,9 @@ header .carousel-caption p span {
   padding-top: 90px;
   padding-bottom: 60px;
 }
+.sec1-about .head-text {
+  margin-bottom: 60px;
+}
 .sec1-about .box h1 {
   font-size: 30px;
   color: #39437C;
@@ -751,12 +845,121 @@ header .carousel-caption p span {
 .sec1-about .sec1 .head-text {
   color: #39437C;
 }
-.sec1-about .sec1 .box-sec1 h2, .sec1-about .sec1 .box-sec1 p {
+.sec1-about .sec1 .box-sec1 h2,
+.sec1-about .sec1 .box-sec1 p {
   color: #39437C;
 }
 .sec1-about .sec1 .box-sec1 img {
   width: 160px;
   height: 100px;
+}
+
+.help {
+  min-height: 628px !important;
+}
+.help h1 {
+  font-size: 60px;
+  color: #fff;
+  font-family: "Sarabun-bold";
+  text-transform: uppercase;
+  padding-top: 130px;
+  margin-bottom: 60px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .help h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .help h1 {
+    font-size: 30px;
+  }
+}
+.help .mll {
+  margin-left: 17%;
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .help .mll {
+    margin-left: 15%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .help .mll {
+    margin-left: 15%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .help .mll {
+    margin-left: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .help .mll {
+    margin-left: 0;
+  }
+}
+.help label {
+  width: 540px;
+  position: relative;
+  display: inline-block;
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .help label {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .help label {
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .help label {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .help label {
+    width: 100%;
+  }
+}
+.help label input {
+  border: none;
+  border-radius: 15px 15px 0 0;
+  background-color: #FAFAFA;
+  color: #39437C;
+  margin-bottom: 30px;
+  height: 60px;
+  text-indent: 51px;
+}
+.help label input:focus {
+  color: #39437C;
+  border: none;
+  outline: none;
+}
+.help label img {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.help .btn {
+  width: 160px !important;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .help .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .help .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 /*start footer*/
@@ -810,6 +1013,15 @@ footer .finel h3 {
 footer .finel ul li {
   display: inline-block;
 }
+footer .end-footer {
+  background-color: #202646;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-size: 15px;
+}
 
 .footer-pages {
   background-color: #fafafa;
@@ -830,6 +1042,10 @@ footer .finel ul li {
   color: #39437C !important;
 }
 .footer-pages .finel h3 {
+  color: #39437C;
+}
+.footer-pages .end-footer {
+  background: #F0F0F0;
   color: #39437C;
 }
 

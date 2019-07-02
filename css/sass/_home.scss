@@ -123,14 +123,18 @@
   }
   .list-sec5,
   .list-sec4{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
     li{
       margin-bottom: 35px;
       cursor: pointer;
       span{
         display: block;
-        width:65px;
-        height: 65px;
-        line-height: 65px;
+        // width:65px;
+        height: 61px;
+        line-height: 59px;
         text-align: center;
         border-radius: 15px 15px 0 0 ;
         color: $color-background;
@@ -146,11 +150,13 @@
         color: $color-background;
         font-size: 25px;
         text-transform: uppercase;
+        font-family: $f-bold;
       }
       p{
         color: $color-background;
         font-size: 18px;
         text-transform: capitalize;
+        width: 90%;
       }
     }
     .active{
@@ -169,6 +175,8 @@
       display: block;
       margin-left: auto;
         margin-right: auto;
+        // box-shadow: -15px 15px 15px rgba(2, 3, 5, 0.32);
+        background-color: transpernt;
     }
     .h2-content{
       display: inline-block;
@@ -186,7 +194,7 @@
 }
 .sec5{
   padding-top: 90px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
   .big-img{
     margin-bottom: 30px;
   }
@@ -197,6 +205,7 @@
   p{
     font-size: 25px;
     color: $min-color;
+    margin-bottom: 30px;
     span{
       color: $color1;
       text-transform: uppercase;
@@ -207,7 +216,7 @@
   }
 }
 .sec6{
-    margin-top: 90px;
+    // margin-top: 90px;
   .container-fluid{
     overflow: hidden;
   }
@@ -220,6 +229,10 @@
     min-height: 400px;
     padding-left: 33%;
 padding-top: 83px;
+@media(max-width: 767px){
+      background: url(../img/become_a_captain.jpg)left center no-repeat;
+      padding-bottom: 70px;
+}
 @media(max-width: 767px){
       padding-left: 8%;
 }
