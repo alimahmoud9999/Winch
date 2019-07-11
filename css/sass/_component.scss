@@ -3,12 +3,26 @@
   font-size: 40px;
   text-transform: uppercase;
   font-family: $f-bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  @media (min-width: 481px) and (max-width: 1280px){
+        font-size: 30px;
+    }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 30px;
+  }
 
 }
 %head-p{
     color: #fff;
     font-size: 25px;
+    @media (min-width: 481px) and (max-width: 1280px){
+          font-size: 20px;
+      }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 20px;
+    }
   span{
     color: $color1;
     font-family: $f-bold;
@@ -25,9 +39,21 @@
   font-size: 23px;
   background-color: #FFF488;
   font-family: $f-bold;
+  position: relative;
+
   &:focus{
       outline: none;
       box-shadow:none;
+  }
+  img{
+    width: 27px;
+    height: 25px;
+    // position: absolute;
+    // top: 14px;
+    // right: 20px;
+    margin-left: 15px;
+    margin-top: -6px;
+
   }
 }
 
@@ -45,6 +71,10 @@
     margin-bottom: 30px;
     width: 230px;
     height: 120px;
+    @media (min-width: 768px) and (max-width: 991.98px){
+          width: 70%;
+          height: auto;
+      }
   }
   h3{
     color: $color-background;
@@ -52,6 +82,18 @@
     text-transform: uppercase;
     font-family: $f-bold;
     letter-spacing: 1px;
+    @media (min-width: 767px) and (max-width: 1199.98px) {
+      font-size: 15px;
+      letter-spacing: 0px;
+     }
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 20px;
+
+    }
+    @media (min-width: 0) and (max-width: 481px) {
+      font-size:20px;
+
+    }
   }
   p{
     color: rgba(90, 100, 157, 0.8);
@@ -60,6 +102,18 @@
     margin-left: auto;;
     margin-right: auto;
     margin-bottom: 0;
+    @media (min-width: 767px) and (max-width: 1199.98px) {
+      font-size: 15px;
+      letter-spacing: 0px;
+     }
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 18px;
+
+    }
+    @media (min-width: 0) and (max-width: 481px) {
+      font-size:18px;
+
+    }
 
   }
 }

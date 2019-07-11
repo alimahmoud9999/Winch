@@ -1,18 +1,27 @@
-.BecomeCaptain{
-  margin-bottom: 120px ;
-}
+
+
 .sec1-twingservice {
   background: url("../img/map_dark_bg.jpg");
   min-height: 800px;
   border-radius: 0 0 100px 100px;
-  padding-top: 130px;
+  padding-top: 90px;
   padding-bottom: 40px;
-  @media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 0px) and (max-width: 767px) {
     padding-top: 0;
-}
+  }
 
   .content {
     padding-top: 90px;
+    @media (min-width: 768px) and (max-width: 991.98px){
+      padding-top: 80px !important;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+    padding-top: 70px !important;
+
+    }
+    @media (min-width: 0) and (max-width: 480px) {
+      padding-top: 70px !important;
+    }
 
     h1 {
       font-size: 40px;
@@ -20,23 +29,50 @@
       color: $color1;
       margin-bottom: 30px;
       text-transform: uppercase;
+      letter-spacing: 0px;
+      @media (min-width: 767px) and (max-width: 1199.98px) {
+        font-size: 30px;
+       }
       @media (min-width: 481px) and (max-width: 767px) {
-          font-size: 35px;
-    }
-
+        font-size: 30px;
+        text-align: center;
+      }
+      @media (min-width: 0) and (max-width: 481px) {
+        font-size: 20px;
+        text-align: center;
+      }
     }
 
     p {
       font-size: 30px;
       color: $min-color;
       margin-bottom: 30px;
+      @media (min-width: 767px) and (max-width: 1199.98px) {
+        font-size: 25px;
+       }
       @media (min-width: 481px) and (max-width: 767px) {
-          font-size: 25px;
-    }
+        font-size: 25px;
+        text-align: center;
+      }
+      @media (min-width: 0) and (max-width: 481px) {
+        font-size:20px;
+        text-align: center;
+      }
     }
 
     a {
       @extend %btn-style;
+      @media (min-width: 481px) and (max-width: 767px) {
+        margin-right: auto;
+        margin-left: auto;
+          display: block;
+      }
+      @media (min-width: 0) and (max-width: 481px) {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
+
     }
   }
 
@@ -45,6 +81,10 @@
     @media(max-width: 767px) {
       margin-top: 30px;
       margin-bottom: 60px;
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -54,14 +94,42 @@
 
   .box-3 {
     margin-bottom: 30px;
-
+    img{
+      width: 65px;
+      height: 64px;
+    }
     h3 {
       color: $color1;
       font-size: 25px;
+      text-transform: uppercase;
+      font-family: $f-bold;
+      letter-spacing: 0px;
+      @media (min-width: 767px) and (max-width: 1024px) {
+      font-size: 20px;
+      }
+      @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 20px;
+      }
+      @media (min-width: 0) and (max-width: 480px) {
+        font-size: 20px;
+      }
     }
 
     .p-content {
       font-size: 18px;
+      .vist{
+        color: $color1;
+        background-color: transparent;
+        font-size: 18px;
+        font-family: $f-normal;
+      }
+      .email{
+        color: $color1;
+        background-color: transparent;
+        font-size: 18px;
+        font-family: $f-normal;
+        text-transform: lowercase;
+      }
     }
   }
 
@@ -71,8 +139,8 @@
     border-radius: 25px 25px 0 0;
     box-shadow: 0 0 99px rgba(57, 67, 124, 0.1);
     position: relative;
-    top: 75px;
-    z-index: 9999;
+    top: 100px;
+    z-index: 1;
 
     h1 {
       color: $color-background;
@@ -81,17 +149,30 @@
       font-family: $f-bold;
       text-transform: uppercase;
       margin-bottom: 60px;
+      @media (min-width: 0px) and (max-width: 474px) {
+        font-size: 25px;
+      }
     }
-textarea,
-    input {
+
+    input,
+    textarea {
       border: none;
       border-radius: 15px 15px 0 0;
       background-color: #FAFAFA;
       color: $color-background;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       height: 60px;
       text-indent: 15px;
+      border: 1px solid transparent;
+      transition: all ease-in-out .2s;
+      &:focus {
+        color: $color-background;
+        border: none;
+        outline: none;
+        border: 1px solid $color-background;
+      }
     }
+
     textarea {
       resize: none;
       height: 150px;
@@ -103,6 +184,72 @@ textarea,
       margin-right: auto;
       margin-left: auto;
       display: block;
+      margin-top: 30px;
+    }
+  }
+}
+.BecomeCaptain {
+  background: url(../img/become_captain_bg.png)Center Center !important;
+  margin-bottom: 120px;
+  @media (min-width: 768px) and (max-width: 991.98px){
+  margin-bottom: 0px;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+margin-bottom: 0px;
+
+  }
+  @media (min-width: 0) and (max-width: 480px) {
+margin-bottom: 0px;
+  }
+  .content{
+    @media (min-width: 768px) and (max-width: 991.98px){
+      padding-top: 80px !important;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+    padding-top: 70px !important;
+
+    }
+    @media (min-width: 0) and (max-width: 480px) {
+      padding-top: 70px !important;
+    }
+
+  }
+}
+.partners2 {
+  .content {
+    // padding-top: 205px;
+    @media (min-width: 768px) and (max-width: 991.98px){
+      padding-top: 80px;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+    padding-top: 80px;
+
+    }
+    @media (min-width: 0) and (max-width: 480px) {
+      padding-top: 90px;
+    }
+
+
+    .box-3 {
+      margin-bottom: 30px;
+
+      h3 {
+        color: #39437C;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: $f-bold;
+        @media (min-width: 0px) and (max-width: 474px) {
+          font-size: 20px;
+        }
+      }
+
+      .p-content {
+        font-size: 18px;
+        color: #5A649D;
+        @media (min-width: 0px) and (max-width: 474px) {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
@@ -110,9 +257,16 @@ textarea,
 .sec2-towing {
   position: relative;
   top: -60px;
-
   .box {
     @extend %box-content;
+  }
+}
+
+.sec1-goods {
+  .box {
+    p {
+      width: 80%;
+    }
   }
 }
 
@@ -125,6 +279,15 @@ textarea,
     color: $color-background;
     text-transform: uppercase;
     margin-bottom: 60px;
+    @media (min-width: 481px) and (max-width: 767px) {
+  font-size:25px;
+  text-align: center;
+
+    }
+    @media (min-width: 0) and (max-width: 480px) {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 
   p {
@@ -132,10 +295,16 @@ textarea,
     font-size: 23px;
     padding-top: 18px;
     margin-bottom: 30px;
+  @media (min-width: 767px) and (max-width: 1199.98px){
+  font-size:15px;
+  text-align: center;
+    }
   }
 
   img {
     display: block;
+    width: 65px;
+    height: 65px;
   }
 }
 
@@ -145,7 +314,7 @@ textarea,
   .content {
     background-color: #FFF2EF;
     border-radius: 25px 25px 0 0;
-    padding: 30px 35px 30px 0px;
+    padding: 30px 45px 30px 0;
     position: relative;
 
     &:after {
@@ -183,27 +352,59 @@ textarea,
     }
   }
 }
-.sec1-partners{
+
+.partners {
+  background: url(../img/6.png) center center !important;
+  // min-height:800px;
+  // @media (min-width: 0px) and (max-width: 767px) {
+  //   height: 800px;
+  // }
+
+  .content {
+    @media (min-width: 0px) and (max-width: 767px) {
+      padding-top: 70px !important;
+    }
+
+    h1 {
+      @media (min-width: 0px) and (max-width: 767px) {
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+.sec1-partners {
   padding-top: 90px;
   padding-bottom: 60px;
-  h2{
-      font-size: 30px;
-      color: $color-background;
-      margin-bottom: 60px;
-      text-transform: uppercase;
-      font-family: $f-bold;
-      letter-spacing: 2px;
+
+  h2 {
+    font-size: 30px;
+    color: $color-background;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-family: $f-bold;
+    letter-spacing: 0px;
   }
-  .box-img{
+
+  .box-img {
     margin-bottom: 30px;
     width: 100%;
     height: 155px;
     box-shadow: 0 40px 99px rgba(0, 0, 0, 0.05);
   }
 }
+.About{
+    background: url("../img/contact_us_bg.png")no-repeat top center;
+    margin-bottom: 120px;
+}
 .sec1-about {
   padding-top: 90px;
   padding-bottom: 60px;
+
+  .head-text {
+    margin-bottom: 60px;
+
+  }
 
   .box {
     h1 {
@@ -212,27 +413,233 @@ textarea,
       margin-bottom: 15px;
       text-transform: uppercase;
       font-family: $f-bold;
-      letter-spacing: 2px;
+      letter-spacing: 0px;
+      @media (min-width: 768px) and (max-width: 991.98px){
+        font-size: 20px;
+      }
+      @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 20px;
+
+      }
+      @media (min-width: 0) and (max-width: 480px) {
+        font-size: 20px;
+
+      }
     }
+
     p {
       color: $color-background;
       font-size: 20px;
+      @media (min-width: 768px) and (max-width: 991.98px){
+        font-size: 15px;
+      }
+      @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 15px;
+
+      }
+      @media (min-width: 0) and (max-width: 480px) {
+        font-size: 15px;
+
+      }
     }
   }
-  .sec1{
+
+  .sec1 {
     background-color: transparent;
-    .head-text{
+
+    .head-text {
       color: $color-background;
     }
+
     .box-sec1 {
-      h2,p{
-          color: $color-background;
+      h2{
+        font-size: 20px;
+        letter-spacing: 0px;
+        @media (min-width: 768px) and (max-width: 991.98px){
+          font-size: 18px;
+        }
+        @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 18px;
+
+        }
+        @media (min-width: 0) and (max-width: 480px) {
+          font-size: 18px;
+
+        }
       }
-      img{
+      h2,
+      p {
+        color: $color-background;
+      }
+      p{
+        @media (min-width: 768px) and (max-width: 991.98px){
+          font-size: 14px;
+        }
+        @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 14px;
+
+        }
+        @media (min-width: 0) and (max-width: 480px) {
+          font-size: 14px;
+
+        }
+      }
+
+      img {
         width: 160px;
         height: 100px;
       }
     }
+  }
+}
 
+.help {
+  min-height: 628px !important;
+  background: url(../img/4.png) center center no-repeat !important ;
+
+  h1 {
+    font-size: 60px;
+    color: $min-color;
+    font-family: $f-bold;
+    text-transform: uppercase;
+    padding-top:60px;
+    margin-bottom: 60px;
+    @media (min-width: 768px) and (max-width: 991.98px){
+      font-size: 40px;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+  font-size: 35px;
+  padding-top:100px;
+    }
+    @media (min-width: 0) and (max-width: 480px) {
+      font-size: 30px;
+      padding-top:120px;
+    }
+  }
+
+  .mll {
+    margin-right: 17%;
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      margin-right: 15%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-right: 15%;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+      margin-right: 0;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin-right: 0;
+    }
+  }
+
+  label {
+    width: 540px;
+    position: relative;
+    display: inline-block;
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+      width: 100%;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 100%;
+    }
+
+    input {
+      border: none;
+      border-radius: 15px 15px 0 0;
+      background-color: #FAFAFA;
+      color: $color-background;
+      margin-bottom: 30px;
+      height: 60px;
+      text-indent: 51px;
+
+      &:focus {
+        color: $color-background;
+        border: none;
+        outline: none;
+      }
+    }
+
+    img {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 20px;
+      right:15px;
+    }
+  }
+
+  .btn {
+    @extend %btn-style;
+    width: 160px !important;
+    @media (min-width: 481px) and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+}
+.sec1-help{
+  @media (min-width: 0) and (max-width: 767px) {
+  margin-top: 50px;
+  }
+  .box{
+    margin-bottom: 60px;
+    h2{
+      font-size: 25px;
+      text-transform: uppercase;
+      font-family: $f-bold;
+      color: $color-background;
+      margin-bottom: 15px;
+      @media (min-width: 0) and (max-width: 767px) {
+          font-size: 20px;
+      }
+    }
+    ul {
+      padding: 0;
+      li{
+        padding-right: 15px;
+        margin-bottom: 15px;
+        &:before {
+          content: "\2022";
+          color: #39437C;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-right: -1em;
+        }
+        a{
+          color: #39437C;
+          font-size: 18px;
+          @media (min-width: 0) and (max-width: 767px) {
+              font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+.sec2-help{
+  top: -100px !important;
+  @media (min-width: 0px) and (max-width: 767px) {
+  top: -173px !important;
+  }
+}
+.about-us{
+  background: url(../img/about_us_bg.png) center center no-repeat !important;
+  h1{
+    color: $color1;
+    padding-top: 130px;
   }
 }

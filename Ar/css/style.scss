@@ -1,7 +1,7 @@
 /*
 Tamplet name : WINCH
 coder name Ali mahmoud
-start Date 12/6/2019
+start Date 17/6/2019
 */
 //import files scss
 @import 'sass/var';
@@ -26,8 +26,8 @@ a {
 }
 
 body {
-  direction: rtl;
-  text-align: right;
+  direction: rtl ;
+ text-align: right !important;
   font-family: $f-normal !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

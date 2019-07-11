@@ -3,6 +3,9 @@ $(window).on('load',function(){
 })
 
 $(document).ready(function(){
+  $('.carousel').carousel({
+  interval: 2000
+})
   $("#js-rotating").Morphext({
       // The [in] animation type. Refer to Animate.css for a list of available animations.
       animation: "flipInX",

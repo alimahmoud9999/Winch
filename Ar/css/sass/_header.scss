@@ -1,12 +1,12 @@
 header{
   .carousel{
     @media(max-width: 767px){
-          height: 500px;
+          height: 270px;
     }
   }
   .img-header{
     @media(max-width: 767px){
-          height: 500px;
+          height: 270px;
     }
   }
   .carousel-indicators {
@@ -14,6 +14,14 @@ header{
       width:15px;
       height: 15px;
       border-radius: 50%;
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        width:12px;
+        height: 12px;
+       }
+       @media (max-width: 575.98px) {
+         width:10px;
+         height: 10px;
+        }
     }
     .active{
       background-color: $color1;
@@ -26,37 +34,45 @@ header{
       font-size: 80px;
       font-family: $f-bold;
       text-transform: uppercase;
+
     @media (min-width: 1025px) and (max-width: 1280px){
         font-size: 60px;
       }
       @media (min-width: 768px) and (max-width: 1024px){
-        font-size: 27px;
+        font-size: 45px;
       }
       @media (min-width: 481px) and (max-width: 767px) {
 
-      font-size: 36px;
+      font-size: 35px;
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 0) and (max-width: 480px) {
 
-font-size: 30px;
+font-size: 25px;
 
 }
     }
     p{
       font-size: 40px;
+      text-transform: capitalize;
+        width: 74%;
+        margin-left: auto;
+        margin-right: auto;
       @media (min-width: 1025px) and (max-width: 1280px){
           font-size: 30px;
+          width: 100%;
         }
       @media (min-width: 768px) and (max-width: 1024px){
         font-size: 25px;
+          width: 100%;
       }
       @media (min-width: 481px) and (max-width: 767px) {
 
         font-size: 18px;
+          width: 100%;
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 0) and (max-width: 480px) {
 font-size: 15px;
-
+  width: 100%;
 }
 
       span{
