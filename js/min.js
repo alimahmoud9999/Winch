@@ -112,13 +112,13 @@ $(document).ready(function() {
   $('.box-fixed ul li').on('click', function() {
     $(this).addClass('active').siblings().removeClass('active');
     $('html , body').animate({
-      scrollTop: $('#' + $(this).data('scroll')).offset().top + 1
+      scrollTop: $('#' + $(this).data('scroll')).offset().top - 1
     }, 1000);
   });
 
   $(window).scroll(function() {
     $('.block').each(function() {
-      if ($(window).scrollTop() > $(this).offset().top) {
+      if ($(window).scrollTop() > $(this).offset().top / 1.2 ) {
         var blockID = $(this).attr('id');
         $('.box-fixed ul li[data-scroll="' + blockID + '"]').addClass('active').siblings().removeClass('active');
       }
