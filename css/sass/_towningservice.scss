@@ -609,6 +609,11 @@ margin-bottom: 0px;
       li{
         padding-left: 15px;
         margin-bottom: 15px;
+        color: #39437C;
+        font-size: 18px;
+        @media (min-width: 0) and (max-width: 767px) {
+            font-size: 15px;
+        }
         &:before {
           content: "\2022";
           color: #39437C;

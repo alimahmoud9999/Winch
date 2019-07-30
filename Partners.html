@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>WINCH</title>
+   <link rel="icon" href="img/icons/fav.png" type="image/gif" sizes="16x16"> 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/morphext.css">
@@ -132,35 +133,43 @@
             </div>
           </div>
           <div class="col-lg-5 col-md-10  mx-auto">
-            <form class="" action="index.html" method="post">
+            <form class="" action="index.html" id="deliveringForm" method="post">
                 <div class="row">
                   <div class="col-12">
+                    <div class="alert alert-success" id="successMessage"  style="color: #ffffff;background-color: #aab2de; border-color: #aab2de;"role="alert">
+                         You Register Successfully .
+                         </div>
                       <h1>Start delivering</h1>
                   </div>
                   <div class="col-6 mx">
-                      <input class="btn-block" type="text" name="" value="" placeholder="First Name">
+                      <input class="btn-block" type="text" name="FirstName" value="" placeholder="First Name" required>
                   </div>
                   <div class="col-6">
-                      <input class="btn-block" type="text" name="" value="" placeholder="Last Name">
+                      <input class="btn-block" type="text" name="LastName" value="" placeholder="Last Name" required>
                   </div>
                   <div class="col-12">
-                      <input class="btn-block" type="email" name="" value="" placeholder="Email">
+                      <input class="btn-block" type="email" name="Email" value="" placeholder="Email" required>
                   </div>
                   <div class="col-12">
-                      <input class="btn-block" type="text" name="" value="" placeholder="Phone Number">
+                      <input class="btn-block" type="text" name="PhoneNumber" value="" placeholder="Phone Number" required>
                   </div>
                   <div class="col-12">
-                      <input class="btn-block" type="text" name="" value="" placeholder="Company Name">
+                      <input class="btn-block" type="text" name="CompanyName" value="" placeholder="Company Name" required>
                   </div>
                   <div class="col-12">
-                      <button class="btn" type="button" name="button">
+                      <button class="btn" type="submit" name="button">
                         send now
                         <img src="img/icons/next.png" alt="">
                       </button>
+
+                     
                   </div>
                 </div>
             </form>
           </div>
+
+
+
           <div class="col-lg-6 col-md-8 d-none">
             <div class="content content2">
                 <div class="box-3 mt d-lg-none d-md-none d-sm-block">
@@ -407,5 +416,29 @@
   <script src="js/lightslider.min.js"></script>
   <script src="js/min.js"></script>
 </body>
+<script>
+$("#successMessage").hide();
+    $("#deliveringForm").submit(function (e) {
+          e.preventDefault();
+          formSubmit();
+          //alert("ff");
+})
+    function formSubmit(){
 
+            $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbxiPyRHaS-HlV6qUP8B8roG4mJwUzyGGAqWoD2yOVbAGJNVUz4/exec",
+            type: "get",
+            data: $("#deliveringForm").serialize(),
+            success: function (response) {
+                $("#deliveringForm")[0].reset();
+                // alert("you register success");
+                $("#successMessage").show();
+
+                return true;
+ 
+            },
+        
+        });
+    }
+  </script>
 </html>

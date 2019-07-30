@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>WINCH</title>
+   <link rel="icon" href="img/icons/fav.png" type="image/gif" sizes="16x16"> 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/morphext.css">
@@ -133,28 +134,31 @@
             </div>
           </div>
           <div class="col-lg-5 col-md-10  mx-auto">
-            <form class="" action="index.html" method="post">
+            <form class="" action="index.html" id="winchForm" method="post">
                 <div class="row">
                   <div class="col-12">
+                      <div class="alert alert-success" id="successMessage"  style="color: #ffffff;background-color: #aab2de; border-color: #aab2de;"role="alert">
+                         You Register Successfully .
+                         </div>
                       <h1>Join Winch</h1>
                   </div>
                   <div class="col-6 mx">
-                      <input class="btn-block" type="text" name="" value="" placeholder="First Name">
+                      <input class="btn-block" type="text" name="FirstName" value="" placeholder="First Name">
                   </div>
                   <div class="col-6">
-                      <input class="btn-block" type="text" name="" value="" placeholder="Last Name">
+                      <input class="btn-block" type="text" name="LastName" value="" placeholder="Last Name">
                   </div>
                   <div class="col-12">
-                      <input class="btn-block" type="email" name="" value="" placeholder="Email">
+                      <input class="btn-block" type="email" name="Email" value="" placeholder="Email">
                   </div>
                   <div class="col-12">
-                      <input class="btn-block" type="text" name="" value="" placeholder="Phone Number">
+                      <input class="btn-block" type="text" name="PhoneNumber" value="" placeholder="Phone Number">
                   </div>
                   <div class="col-12">
-                      <input class="btn-block" type="text" name="" value="" placeholder="Company Name">
+                      <input class="btn-block" type="text" name="CompanyName" value="" placeholder="Company Name">
                   </div>
                   <div class="col-12">
-                      <button class="btn" type="button" name="button">
+                      <button class="btn"  type="submit"name="button">
                         send now
                         <img src="img/icons/next.png" alt="">
                       </button>
@@ -314,5 +318,30 @@
   <script src="js/lightslider.min.js"></script>
   <script src="js/min.js"></script>
 </body>
+<script>
 
+$("#successMessage").hide();
+    $("#winchForm").submit(function (e) {
+          e.preventDefault();
+          formSubmit();
+          //alert("ff");
+})
+    function formSubmit(){
+
+            $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbz4fouEX3PM7l1guiDe0zFhP9y3iSB9UzVfuOc_jvopWun1cFc/exec",
+            type: "get",
+            data: $("#winchForm").serialize(),
+            success: function (response) {
+                $("#winchForm")[0].reset();
+                // alert("you register success");
+                $("#successMessage").show();
+
+                return true;
+ 
+            },
+        
+        });
+    }
+  </script>
 </html>
